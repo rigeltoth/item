@@ -1,0 +1,27 @@
+###
+GET http://localhost:4000/api/items
+
+###
+GET http://localhost:4000/api/items/61c6377b57960cef5a422b77
+
+###
+POST http://localhost:4000/api/items
+Content-Type: application/json
+
+{
+    "name": "mouse",
+    "brand": "acer",
+    "price": "20",
+    "cant": "5"
+}
+
+###
+PUT http://localhost:4000/api/items/61c6433e752e877cd31224a0
+Content-Type: application/json
+
+{
+    "brand": "toshiba"
+}
+
+###
+DELETE http://localhost:4000/api/items/61c6433e752e877cd31224a0
